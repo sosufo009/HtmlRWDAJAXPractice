@@ -1,0 +1,80 @@
+@media (max-width: 640px) {
+    h1 {
+        color: fuchsia;
+    }
+    .contain {
+        min-width: 480px;
+        width: expression(document.body.clientWidth < 480? "480px": "auto");
+    }
+    .left-con {
+        height: 300px;
+    }
+    .wrap-right {
+        height: 150px;
+    }
+}
+
+@media (min-width: 640px) {
+    h1 {
+        color: blue;
+    }
+    .contain {
+        max-width: 1024px;
+        width: expression(document.body.clientWidth > 1024? "1024px": "auto");
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main {
+        overflow: hidden;
+        background: #EEE;
+    }
+    .wrap-right {
+        width: 100px;
+        position: relative;
+        float: right;
+        margin-left: -100px;
+        background: #AAA;
+    }
+    .wrap-left {
+        width: 100%;
+        float: left;
+    }
+    .left-con {
+        margin-right: 100px;
+        background: #DDD;
+    }
+    .left-con, .wrap-right {
+        height: 500px;
+    }
+}
+
+.head {
+    background-color: #CCEEFF;
+    width: 100%;
+    height: 120px;
+}
+
+.left-con {
+    background-color: #DDDDDD;
+    overflow-x:hidden;overflow-y:auto;
+    padding-left: 15px;
+}
+
+
+.wrap-right {
+    background-color: #888888;
+}
+
+.foot {
+    background-color: #CCEEFF;
+    height: 120px;
+}
+
+div {
+    margin: 0 0 0 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px auto;
+}
